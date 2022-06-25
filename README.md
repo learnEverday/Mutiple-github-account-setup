@@ -8,7 +8,15 @@ ssh-keygen -t rsa -C "your-email-address"
 ### step.2: attach the new key with new github account
 - cat or vim or nano  ~/.ssh/id_rsa_COMPANY.pub : this command to get the key
 ### step.2.1: Next, because we saved our key with a unique name, we need to tell SSH about it. 
-- Within the Terminal, type: ```shell ssh-add ~/.ssh/id_rsa_COMPANY ``` .If successful, you'll see a response of "Identity Added."
+- Within the Terminal, type:
+-  ```shell 
+-  ssh-add ~/.ssh/id_rsa_COMPANY
+-   ``` 
+-  .If successful, you'll see a response of "Identity Added."
+- if get error(Could not open a connection to your authentication agent) then write below command first and then run ssh-add command with directory path Like below
+```shell 
+eval `ssh-agent -s`
+ssh-add ```
 ### step.3: Create a Config File or use existed config file
 - to create config and open with vim : ```shell touch ~/.ssh/config
 vim config ```
