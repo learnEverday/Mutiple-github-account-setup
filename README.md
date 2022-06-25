@@ -1,7 +1,7 @@
 # How to setup multiple github setup:
 - follow link:https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574
 # some steps:
-### step.1: generate unique ssh and about email your new github account email and also save .ssh folder with other ssh key but with different file name.For example id_ras.pub to id_rsa_newName.pub
+### step.1: generate unique ssh and about email your new github account email and also save .ssh folder with other ssh key but with different file name.For example id_ras to id_rsa_newName
 ```shell
 ssh-keygen -t rsa -C "your-email-address"
 ```
